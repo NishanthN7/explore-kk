@@ -1,0 +1,3 @@
+import {Suspense} from "react";
+import LiveDirections from "@/components/LiveDirections";
+export default function DirectionsPage(){return <main className="section directions-page"><div className="container"><span className="kicker">EXPLORE KK ROUTES</span><h1 style={{fontSize:"clamp(40px,6vw,64px)",margin:"10px 0 8px"}}>Get there, without leaving Explore KK.</h1><p className="muted direction-intro">Use your live location to see the road route, distance, estimated travel time and turn-by-turn directions directly on this website.</p><div style={{marginTop:28}}><Suspense fallback={<div className="form-card">Loading route planner…</div>}><LiveDirections/></Suspense></div></div></main>}
